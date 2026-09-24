@@ -55,6 +55,20 @@ const activityPhotos = {
   okinawaCoast: ['Onna Okinawa Japan Cape-Manzamo-01.jpg', 'CEphoto, Uwe Aranas', 'CC BY-SA 3.0'],
   okinawaKayak: ['Sea kayaking Zamami Okinawa.jpg', 'Roger Braunstein', 'CC BY 2.0'],
   okinawaNorth: ['Cape Hedo 202011.jpg', 'Kugel~commonswiki', 'CC BY-SA 4.0']
+  ,hakone: ['LakeAshi and MtFuji Hakone.JPG', 'Kentagon', 'CC BY-SA 4.0']
+  ,owakudani: ['Owakudani @ Hakone (10621132754).jpg', 'Guilhem Vellut', 'CC BY 2.0']
+  ,hakoneShrine: ["Hakone Shrine's torii (30577923547).jpg", 'Raita Futo', 'CC BY 2.0']
+  ,togetsukyo: ['Togetsukyō Bridge.jpg', 'Ian G Shingler', 'CC BY-SA 4.0']
+  ,tenryuji: ['Tenryuji garden.jpg', 'Chris Gladis', 'CC BY 2.0']
+  ,yasakaPagoda: ['Yasaka pagoda @ Kyoto (13406125105).jpg', 'Guilhem Vellut', 'CC BY 2.0']
+  ,kasuga: ['Lanterns Kasuga-taisha.jpg', 'Gzzz', 'CC BY-SA 4.0']
+  ,takoyaki: ['Takoyaki by zezebono in Dotonbori, Osaka.jpg', 'zezebono', 'CC BY-SA 2.0']
+  ,omoide: ['Omoide Yokocho (53136082186).jpg', 'Dick Thomas Johnson', 'CC BY 2.0']
+  ,goldenGai: ['Golden gai.jpg', 'Nipponese', 'Public Domain']
+  ,hakoneRyokan: ['Japanese room with tatami mats.jpg', 'Fg2', 'Public Domain']
+  ,pontocho: ['Pontocho Alley, Kyoto (52406641269).jpg', 'Sergiy Galyonkin', 'CC BY-SA 2.0']
+  ,monkeyPark: ['Japanese Macaque at Arashiyama Monkey Park Iwatayama, Japan.jpg', 'Joli Rumi', 'CC BY-SA 4.0']
+  ,wagyu: ['Wagyu beef (3590808325).jpg', 'beccapie', 'CC BY-SA 2.0']
 };
 const activityImageUrls = {
   "asakusa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/640px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
@@ -108,14 +122,30 @@ const activities = [
   ['teppanyaki','Teppanyaki zum Mittagessen','Tokyo','5','Beim Teppanyaki bereitet ein Koch das Essen direkt vor deinen Augen auf einer heißen Platte zu.','teppanyaki'],
   ['seiko-museum','Seiko Museum Ginza','Tokyo','5','Museum zur Geschichte der Zeitmessung und Seikos technischer Entwicklung; für Uhrenfans etwa 90 Minuten und eine Reservierung vorsehen.','seikoMuseum','must'],
   ['seiko-ginza','Seiko Dream Square & Seiko House','Tokyo','5','Brand Experience, Uhrenvergleich und der historische Uhrturm liegen nur wenige Gehminuten vom Seiko Museum entfernt.','seikoHouse','must'],
+  ['shibuya-crossing','Shibuya Crossing & Shopping','Tokyo','4','Die berühmte Kreuzung, Shibuya PARCO und die umliegenden Kaufhäuser verbinden Stadtpanorama, Gaming und Shopping.','shibuya','must'],
+  ['shinjuku-kabukicho','Shinjuku & Kabukichō','Tokyo','5','Dichtes Nachtviertel mit riesigen Leuchtreklamen, Hochhäusern und einer futuristischen Großstadtatmosphäre.','tokyoMetro','must'],
+  ['omoide-yokocho','Omoide Yokochō & Yakitori','Tokyo','5','Ein Labyrinth enger Gassen mit winzigen Grilllokalen; am Abend Yakitori-Spieße an einem klar ausgezeichneten Stand probieren.','omoide'],
+  ['golden-gai','Golden Gai','Tokyo','5','Kompaktes Viertel mit winzigen Retro-Bars; nur Lokale mit klaren Preisen wählen und niemals Straßenwerbern folgen.','goldenGai'],
+  ['karaoke','Karaoke in Tokyo','Tokyo','5','Ein privater Karaoke-Raum ist eine unkomplizierte Abendaktivität, allein oder später mit neuen Bekanntschaften.','goldenGai','maybe'],
+  ['mori-tower','Tokyo View vom Mori Tower','Tokyo','2–5','Aussichtsplattform in Roppongi mit weitem Blick über das nächtliche Tokyo; als flexible Schlechtwetter- oder Abendoption vormerken.','tokyoMetro','maybe'],
+  ['odaiba','Odaiba, Monorail & Gundam','Tokyo','2–5','Futuristische Inselkulisse mit Fahrt über die Rainbow Bridge, Uferblick und der großen Unicorn-Gundam-Statue.','yokohamaHarbor','maybe'],
+  ['ginza-shopping','Ginza & Umeshu-Souvenir','Tokyo','5','Ginza mit dem Seiko-Nachmittag verbinden und in einem Kaufhaus nach japanischem Pflaumenwein als Souvenir schauen.','seikoHouse'],
+  ['secondhand','Second-Hand-Shopping','Tokyo','2–5','Vintagekleidung, Kameras, Games oder Uhren gezielt in spezialisierten Läden und beim Flohmarkt vergleichen.','fleaMarket'],
+  ['ramen','Ramen essen','Tokyo','2–5','Zwischen Ichiran mit Einzelkabine, Ippudo und einem kleinen Viertel-Ramenladen wählen, statt nur Touristenketten abzuklappern.','asakusa'],
+  ['capsule-stay','Eine Nacht im Capsule-Hotel','Tokyo','6','MyCUBE in Kuramae bietet die Capsule-Erfahrung mit mehr Privatsphäre und abschließbarem Stauraum.','ryokan','must'],
+  ['love-hotel','Themenhotel / Love Hotel (optional)','Tokyo','2–5','Japanische Kurzzeithotels haben oft auffällige Themenzimmer, große Bäder oder Karaoke; nur bei klarer Preisangabe und seriöser Buchung wählen.','shibuya','maybe'],
+  ['game-center','Game Center','Tokyo','3–5','Mehrstöckige Spielhalle mit Rhythmusspielen, Rennspielen, Greifautomaten und klassischen Arcade-Titeln.','arcade'],
   ['kamakura','Kamakura & Tsurugaoka Hachimangū','Kamakura / Yokohama','6','Historische Tempelstadt mit einem bedeutenden Schrein und der Einkaufsstraße Komachi-dōri.','kamakura'],
   ['karepan','Curry Bread in Kamakura','Kamakura / Yokohama','6','Kare Pan ist ein knuspriges, mit japanischem Curry gefülltes Brot für unterwegs.','curryBread'],
   ['yokohama-hafen','Yokohama-Hafen','Kamakura / Yokohama','6','Die Hafenpromenade bietet Blicke auf Wasser, moderne Skyline und die Ufer von Minato Mirai.','yokohamaHarbor'],
   ['chinatown','Yokohama Chinatown','Kamakura / Yokohama','6','Buntes Viertel mit Torbögen, Garküchen und vielen chinesischen Restaurants.','yokohama'],
   ['bethel-japan','Bethel Japan in Ebina','Kamakura / Yokohama','6','Besuch des japanischen Zweigbüros mit Ausstellungen zur Geschichte des Predigtwerks und zur Bibel in Japan; eine Führung muss vorab reserviert werden.','ebina','must'],
-  ['kawaguchi','Kawaguchi-See','Fuji','7–8','See am Fuß des Fuji, an dessen Ufer sich bei klarem Wetter Bergpanoramen öffnen.','fuji'],
+  ['hakone','Hakone in den Bergen','Hakone','7','Berg- und Onsenregion zwischen Tokyo und Fuji mit Seilbahnen, See und vulkanischer Landschaft.','hakone','must'],
+  ['owakudani','Ōwakudani','Hakone','7','Aktives Vulkantal mit dampfenden Quellen, schwarzen Eiern und bei klarer Sicht einem Blick auf den Fuji.','owakudani','must'],
+  ['hakone-schrein','Hakone-Schrein','Hakone','7','Waldschrein am Ashi-See, dessen rotes Heiwa-no-Torii direkt im Wasser steht.','hakoneShrine','must'],
+  ['hakone-ryokan','Ryokan mit privatem Bad & Kaiseki','Hakone','7','Eine Nacht im Hakone Ginyu mit privatem Open-Air-Onsen sowie mehrgängigem japanischem Abendessen im Zimmer.','hakoneRyokan','must'],
+  ['kawaguchi','Kawaguchi-See','Fuji','8','See am Fuß des Fuji, an dessen Ufer sich bei klarem Wetter Bergpanoramen öffnen.','fuji'],
   ['chureito','Chūreitō-Pagode','Fuji','8','Fünfstöckige Pagode oberhalb von Fujiyoshida mit einem bekannten Blick auf den Fuji.','chureito'],
-  ['ryokan','Ryokan-Abend','Fuji','8','Übernachtung im japanisch eingerichteten Zimmer als ruhiger Abschluss des Fuji-Ausflugs.','ryokan'],
   ['mazda-fan-festa','Mazda Fan Festa 2027 · Termin offen','Fuji','7–8','Motorsport- und Markenevent am Fuji Speedway; nur einplanen, falls ein offizieller Termin 2027 zu den Reisedaten passt.','fujiSpeedway'],
   ['nagamachi','Nagamachi-Samurai-Viertel','Kanazawa','9','Historisches Viertel mit Lehmwänden, schmalen Gassen und einstigen Samurai-Residenzen.','nagamachi'],
   ['omicho','Ōmichō-Markt','Kanazawa','10','Lebendiger Markt mit Fisch, Obst und kleinen Essensständen im Zentrum von Kanazawa.','omicho'],
@@ -128,21 +158,34 @@ const activities = [
   ['takayama-altstadt','Takayama-Altstadt','Shirakawa-gō / Takayama','12','Erhaltene Straßen mit dunklen Holzhäusern, kleinen Geschäften und traditioneller Atmosphäre.','takayama'],
   ['nintendo-museum','Nintendo Museum in Uji','Kyoto','13','Museum in einer früheren Nintendo-Fabrik mit Firmengeschichte, klassischen Spielen und interaktiven Installationen; Ticket-Losverfahren früh einplanen.','nintendoMuseum','must'],
   ['uji','Uji & Matcha','Kyoto','13','Ruhiger Vormittag in Uji mit Matcha und optional Byōdō-in als Ergänzung vor dem Nintendo Museum.','uji'],
+  ['kyoto-machiya','In einem Kyomachiya in Higashiyama wohnen','Kyoto','12–15','THE MACHIYA KAMIUMEYA verbindet ein renoviertes traditionelles Stadthaus mit privaten Hotelzimmern nahe Kiyomizu-dera.','higashiyama','must'],
   ['fushimi','Fushimi Inari Taisha','Kyoto','14','Shintō-Schrein mit langen Wegen durch Tausende orangefarbene Torii am Berg Inari.','fushimi'],
   ['tofukuji','Tōfuku-ji','Kyoto','14','Große Zen-Tempelanlage mit Gärten und bekannten Ausblicken auf das bewaldete Tal.','tofukuji'],
   ['nishiki','Nishiki-Markt','Kyoto','13','Überdachte Einkaufsstraße mit Kyoto-Spezialitäten, Gewürzen und kleinen Imbissen.','nishiki'],
   ['kiyomizu','Kiyomizu-dera','Kyoto','14','Tempel am Hang über Kyoto, bekannt für seine große Holzterrasse.','kiyomizu'],
-  ['higashiyama','Higashiyama & Gion','Kyoto','14','Historische Gassen und traditionelle Häuser zwischen den Tempeln und dem Geisha-Viertel.','higashiyama'],
-  ['arashiyama','Arashiyama','Kyoto','15','Grünes Ausflugsgebiet im Westen Kyotos mit Bambuswegen und Flusslandschaft.','arashiyama'],
+  ['yasaka-pagode','Yasaka-Pagode','Kyoto','14','Die fünfstöckige Pagode Hōkan-ji prägt die historische Gassenkulisse von Higashiyama.','yasakaPagoda'],
+  ['higashiyama','Higashiyama & Gion','Kyoto','12–14','Historische Gassen und traditionelle Häuser zwischen den Tempeln und dem Geisha-Viertel.','higashiyama'],
+  ['tempura-endo','Tempura Endo Yasaka','Kyoto','14','Bekanntes Tempura-Restaurant in Gion; das Mittagsmenü ist die sinnvollere, günstigere Variante und sollte reserviert werden.','teppanyaki','must'],
+  ['pontocho','Pontochō Alley','Kyoto','12','Schmale Restaurantgasse am Kamo-Fluss mit besonders stimmungsvoller Atmosphäre am Abend.','pontocho'],
+  ['ohmi-beef','Ōmi Beef / A5 Wagyu','Kyoto','12','Hochwertiges Wagyu aus Shiga als bewusst eingeplantes Abendessen rund um Pontochō.','wagyu'],
+  ['togetsukyo','Togetsukyō-Brücke','Kyoto','15','Historische Brücke über den Katsura-Fluss und der klassische Auftakt für Arashiyama.','togetsukyo'],
+  ['arashiyama','Sagano Bamboo Grove','Kyoto','15','Kurzer, ikonischer Bambusweg im Westen Kyotos; früh am Morgen ist er deutlich ruhiger.','arashiyama'],
+  ['tenryuji','Tenryū-ji','Kyoto','15','Bedeutender Zen-Tempel aus dem 14. Jahrhundert mit historischem Landschaftsgarten.','tenryuji'],
+  ['monkey-park','Iwatayama Monkey Park','Kyoto','15','Bergpark mit frei lebenden Japanmakaken und Aussicht über Kyoto; der Aufstieg dauert etwa 20–30 Minuten.','monkeyPark','maybe'],
   ['kinkaku','Kinkaku-ji','Kyoto','15','Zen-Tempel mit goldverkleidetem Pavillon, der sich im Teich spiegelt.','kinkaku'],
   ['dotonbori','Dōtonbori & Namba','Osaka','16','Neonbeleuchtete Gegend am Kanal mit Streetfood, Läden und abendlichem Trubel.','dotonbori'],
+  ['takoyaki','Takoyaki in Dōtonbori','Osaka','16','Osakas berühmte Teigbällchen mit Oktopus direkt an einem gut besuchten Streetfood-Stand probieren.','takoyaki','must'],
   ['osaka-arcade','Spielhallen in Osaka','Osaka','16','Arcades rund um Namba für Rhythmusspiele, Greifautomaten und eine spontane Spielrunde.','arcade'],
   ['usj','SUPER NINTENDO WORLD & Donkey Kong Country','Osaka','17','Ganzer Nintendo-Tag in den Universal Studios Japan mit Mario Kart und Mine Cart Madness; Eintritt und Area-Zugang früh vorbereiten.','superNintendo','must'],
   ['osaka-castle','Osaka Castle Park','Osaka','18','Weitläufige Grünanlage rund um die markante Burg von Osaka.','castle'],
   ['kuromon','Kuromon-Markt','Osaka','18','Überdachte Marktstraße mit Fischständen, Obst und Snacks.','kuromon'],
   ['shinsekai','Shinsekai','Osaka','18','Retroviertel beim Tsūtenkaku-Turm mit Leuchtreklamen und Kushikatsu-Lokalen.','shinsekai'],
+  ['kushikatsu','Kushikatsu in Shinsekai','Osaka','18','Frittierte Spieße mit Fleisch, Gemüse oder Käse sind der klassische Snack des Retroviertels.','shinsekai'],
+  ['dino-hotel','Dinosaurier-Check-in im Henn na Hotel','Osaka','18','Optionaler kurzer Blick ins Henn na Hotel Osaka Namba, wo Dinosaurier-Roboter am Check-in stehen; kein Hotelwechsel nötig.','castle','maybe'],
   ['todaiji','Tōdai-ji','Nara','19','Buddhistischer Tempel mit einer monumentalen Halle und einer großen Buddha-Statue.','todaiji'],
   ['nara-park','Nara-Park','Nara','19','Großer Park zwischen Schreinen und Tempeln, in dem frei laufende Hirsche leben.','nara'],
+  ['kasuga-taisha','Kasuga Taisha','Nara','19','Waldschrein mit rund 3.000 Stein- und Bronzelaternen entlang der Wege und Gebäude.','kasuga','must'],
+  ['yomogi-mochi','Yomogi Mochi in Nara','Nara','19','Grünes Mochi mit Beifußaroma und süßer Bohnenfüllung, frisch als Snack in der Innenstadt probieren.','nara'],
   ['peacepark','Hiroshima-Friedenspark & Museum','Hiroshima / Miyajima','20','Gedenkstätten und Museum vermitteln die Geschichte des Atombombenabwurfs und seine Folgen.','hiroshima'],
   ['mazda-museum','Mazda Museum & Werkstour','Hiroshima / Miyajima','21','Geführte Tour am Mazda-Hauptsitz mit Fahrzeuggeschichte, Wankelmotoren und Einblicken ins Werksgelände; kostenlose Reservierung ist Pflicht.','mazdaMuseum','must'],
   ['itsukushima','Itsukushima-Schrein','Hiroshima / Miyajima','22','Schrein auf Miyajima mit dem berühmten Torii im Wasser vor der Küste.','itsukushima'],
