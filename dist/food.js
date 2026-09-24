@@ -1,23 +1,23 @@
 // Food photographs used in the daily plan. Original files and licence details
 // remain linked on Wikimedia Commons below every image.
 const foodPhotos = {
-  bento: ['Zaru Bento.jpg', 'Bento für unterwegs'],
+  bento: ['Zaru Bento.jpg', 'Bento für unterwegs', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Zaru_Bento.jpg/960px-Zaru_Bento.jpg'],
   gyudon: ['024 Gyudon beef bowl 牛丼 in Japan - food in Yoshinoya restaurant in Osaka, Japan.jpg', 'Gyūdon'],
   tendon: ['Tendon.jpg', 'Tendon'],
   tonkatsu: ['Japanese tonkatsu.jpg', 'Tonkatsu'],
   teppanyaki: ['Geselliges TEPPANyaki.jpg', 'Teppanyaki'],
-  curryBread: ['Curry bread.jpg', 'Kare Pan'],
-  hoto: ['Hōtō noodles.jpg', 'Hōtō-Nudeln'],
+  curryBread: ['Curry bread.jpg', 'Kare Pan', 'https://upload.wikimedia.org/wikipedia/commons/9/92/Curry_bread.jpg'],
+  hoto: ['Hōtō noodles.jpg', 'Hōtō-Nudeln', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/H%C5%8Dt%C5%8D_noodles.jpg/960px-H%C5%8Dt%C5%8D_noodles.jpg'],
   kaiseki: ['IMG-2023-12-01-kaiseki.jpg', 'Ryokan-Abendessen'],
   teishoku: ['TonkatsuMeal.jpg', 'Japanisches Teishoku'],
   seafood: ['Sushi platter.jpg', 'Fischgericht und Markt-Snacks'],
-  hidaBeef: ['Grilling Hida Beef (Takayama Street Food) (35910429046).jpg', 'Hida-Rind'],
+  hidaBeef: ['Grilling Hida Beef (Takayama Street Food) (35910429046).jpg', 'Hida-Rind', 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Grilling_Hida_Beef_%28Takayama_Street_Food%29_%2835910429046%29.jpg/960px-Grilling_Hida_Beef_%28Takayama_Street_Food%29_%2835910429046%29.jpg'],
   yudofu: ['Yudofu.jpg', 'Yudōfu'],
-  soba: ['JapaneseFood.JPG', 'Soba'],
-  takoyaki: ['Japanese Takoyaki.jpg', 'Takoyaki'],
+  soba: ['JapaneseFood.JPG', 'Soba', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/JapaneseFood.JPG/640px-JapaneseFood.JPG'],
+  takoyaki: ['Japanese Takoyaki.jpg', 'Takoyaki', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Japanese_Takoyaki.jpg/960px-Japanese_Takoyaki.jpg'],
   kushikatsu: ['Osaka kushiage kushikatsu (3818694686).jpg', 'Kushikatsu'],
   kakinoha: ['Kakinoha-zushi - 2.jpg', 'Kakinoha-Zushi'],
-  okonomiyaki: ['Okonomiyaki 008.jpg', 'Okonomiyaki'],
+  okonomiyaki: ['Okonomiyaki 008.jpg', 'Okonomiyaki', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Okonomiyaki_008.jpg/960px-Okonomiyaki_008.jpg'],
   anagomeshi: ['Japanese anagomeshi.jpg', 'Anago-Meshi'],
   okinawa: ['Okinawa soba and goya chanpuru.jpg', 'Okinawa Soba und Gōya Champurū']
 };
