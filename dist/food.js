@@ -24,7 +24,7 @@ const foodPhotos = {
 
 const foodPhotoByDay = {
   1:'bento', 2:'gyudon', 3:'tendon', 4:'tonkatsu', 5:'teppanyaki', 6:'curryBread',
-  7:'hoto', 8:'kaiseki', 9:'teishoku', 10:'seafood', 11:'hidaBeef', 12:'hidaBeef',
+  7:'kaiseki', 8:'hoto', 9:'teishoku', 10:'seafood', 11:'hidaBeef', 12:'hidaBeef',
   13:'yudofu', 14:'soba', 15:'teishoku', 16:'takoyaki', 17:'teishoku', 18:'kushikatsu',
   19:'kakinoha', 20:'okonomiyaki', 21:'okonomiyaki', 22:'anagomeshi', 23:'okinawa',
   24:'okinawa', 25:'okinawa', 26:'teishoku', 41:'bento'
