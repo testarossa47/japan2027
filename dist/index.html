@@ -344,6 +344,6 @@
       register({name:'budget_einstellen',title:'Budget einstellen',description:'Setzt Unterkunft und Freizeitpark für die sichtbare Budgetschaetzung.',inputSchema:{type:'object',properties:{unterkunft:{type:'string',enum:['gestellt','selbst_bezahlt']},universalStudios:{type:'boolean'}},required:['unterkunft','universalStudios'],additionalProperties:false},annotations:{readOnlyHint:false},execute(input){if(!['gestellt','selbst_bezahlt'].includes(input?.unterkunft)||typeof input.universalStudios!=='boolean')throw Error('Ungültige Budgetoption');document.getElementById('stay').value=input.unterkunft==='gestellt'?'hosted':'paid';document.getElementById('usj').checked=input.universalStudios;paintBudget();return {gesamt:document.getElementById('totalCost').textContent}}});
     }
   </script>
-  <script src="./packing.js?v=20260924-2"></script>
+  <script src="./packing.js?v=20260924-3"></script>
 </body>
 </html>
