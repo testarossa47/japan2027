@@ -41,7 +41,7 @@
     item('jacket','Leichte wetterfeste Jacke',1,'Kleidung',false,true,'Für kühlere Abende in Kanazawa und Takayama.'),
     item('rainwear','Kompakter Regenschutz',1,'Kleidung',false,true),
     item('sleepwear','Schlafkleidung',1,'Kleidung',false,true),
-    item('smart-outfit','Ordentliches Outfit für Bethel und Mitarbeit',1,'Kleidung',false,false),
+    item('smart-outfit','Schickes Outfit für Bethel und Mitarbeit',1,'Kleidung',false,false,'Knitterarme Kombination aus Oberteil, Hose oder Rock und passenden Schuhen.'),
     item('walking-shoes','Bequeme eingelaufene Schuhe',1,'Kleidung',false,true),
     item('second-shoes','Leichte Ersatzschuhe',1,'Kleidung',false,false),
     item('overnight-underwear','Unterwäsche für die Takkyūbin-Etappen',3,'Kleidung',false,true),
@@ -55,12 +55,17 @@
     item('earbuds','Kopfhörer',1,'Elektronik',true,true),
     item('esim-info','JJ-eSIM-Unterlagen und QR-Code offline',1,'Elektronik',true,true),
     item('watch-charger','Ladegerät für Uhr oder Tracker',1,'Elektronik',true,true,'Falls benötigt.'),
+    item('laptop','Laptop für Remote-Arbeit',1,'Elektronik',true,true,'Nicht per Takkyūbin versenden; im Rucksack selbst tragen.'),
+    item('laptop-charger','Laptop-Ladegerät',1,'Elektronik',true,true),
+    item('laptop-sleeve','Gepolsterte Laptop-Hülle',1,'Elektronik',true,true),
+    item('remote-work-kit','Kleine Maus oder USB-C-Hub',1,'Elektronik',true,true,'Nur mitnehmen, was du für die Arbeit wirklich brauchst.'),
     item('camera-body','Kamera',1,'Kamera',true,true,'Wertgegenstände nicht per Takkyūbin versenden.'),
     item('camera-lenses','Objektive',2,'Kamera',true,true),
     item('camera-batteries','Kamera-Akkus',3,'Kamera',true,true,'Ersatzakkus gehören ins Handgepäck.'),
     item('memory-cards','Speicherkarten',3,'Kamera',true,true),
     item('camera-charger','Kamera-Ladegerät',1,'Kamera',true,true),
     item('camera-cleaning','Mikrofasertuch und Blasebalg',1,'Kamera',true,true),
+    item('cabin-suitcase','Kabinenkoffer',1,'Reisealltag',false,false,'Masse und Gewichtslimit aller gebuchten Airlines prüfen.'),
     item('daypack','Kleiner Tages- und Übernachtungsrucksack',1,'Reisealltag',true,true,'Für Fuji sowie Shirakawa-gō und Takayama.'),
     item('packing-cubes','Packwürfel',3,'Reisealltag',false,false),
     item('laundry-bag','Wäschebeutel',1,'Reisealltag',false,false),
@@ -71,8 +76,16 @@
     item('shopping-bag','Faltbare Einkaufstasche',1,'Reisealltag',false,true),
     item('pen','Kugelschreiber',1,'Reisealltag',true,true),
     item('luggage-tag','Kofferanhänger',1,'Reisealltag',false,false),
+    item('luggage-scale','Kleine Kofferwaage',1,'Reisealltag',false,false,'Hilfreich für strenge Kabinengepäck-Limits und Rückflug-Einkäufe.'),
     item('small-lock','Kleines Gepäckschloss',1,'Reisealltag',false,false,'Für Capsule-Hotel und Gepäckaufbewahrung.'),
-    item('snacks','Kleine Snacks für die Anreise',1,'Reisealltag',true,false)
+    item('snacks','Kleine Snacks für die Anreise',1,'Reisealltag',true,false),
+    item('swimwear','Badebekleidung',1,'Kleidung',false,false,'Für Okinawa und spontane Hotel- oder Strandtage.'),
+    item('water-shoes','Leichte Badeschuhe oder Sandalen',1,'Kleidung',false,false),
+    item('quick-dry-towel','Kleines schnelltrocknendes Handtuch',1,'Reisealltag',false,false,'Optional; Hotels stellen normale Handtücher bereit.'),
+    item('waterproof-pouch','Wasserdichte Hülle für Smartphone und Wertsachen',1,'Reisealltag',false,false),
+    item('hiking-socks','Zusätzliche Wandersocken',2,'Kleidung',false,true,'Für Fuji-Region, Shirakawa-gō und Mt. Misen.'),
+    item('cap','Kappe oder Sonnenhut',1,'Kleidung',false,true),
+    item('backpack-cover','Regenhülle für den Rucksack',1,'Reisealltag',true,true)
   ];
 
   function cloneDefaults(){return DEFAULT_ITEMS.map(value=>({...value}));}
@@ -96,6 +109,8 @@
       const current=normalize(saved);
       const ids=new Set(current.map(value=>value.id));
       DEFAULT_ITEMS.forEach(value=>{if(!ids.has(value.id))current.push({...value});});
+      const smart=current.find(value=>value.id==='smart-outfit'&&value.name==='Ordentliches Outfit für Bethel und Mitarbeit');
+      if(smart){smart.name='Schickes Outfit für Bethel und Mitarbeit';smart.note='Knitterarme Kombination aus Oberteil, Hose oder Rock und passenden Schuhen.';}
       return current;
     }catch{return cloneDefaults();}
   }
