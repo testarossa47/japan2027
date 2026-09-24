@@ -6,6 +6,7 @@ const foodPhotos = {
   tendon: ['Tendon.jpg', 'Tendon'],
   tonkatsu: ['Japanese tonkatsu.jpg', 'Tonkatsu'],
   teppanyaki: ['Geselliges TEPPANyaki.jpg', 'Teppanyaki'],
+  tempura: ['Assorted Tempura.jpg', 'Tempura'],
   curryBread: ['Curry bread.jpg', 'Kare Pan', 'https://upload.wikimedia.org/wikipedia/commons/9/92/Curry_bread.jpg'],
   hoto: ['Hōtō noodles.jpg', 'Hōtō-Nudeln', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/H%C5%8Dt%C5%8D_noodles.jpg/960px-H%C5%8Dt%C5%8D_noodles.jpg'],
   kaiseki: ['IMG-2023-12-01-kaiseki.jpg', 'Ryokan-Abendessen'],
@@ -17,6 +18,7 @@ const foodPhotos = {
   takoyaki: ['Japanese Takoyaki.jpg', 'Takoyaki', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Japanese_Takoyaki.jpg/960px-Japanese_Takoyaki.jpg'],
   kushikatsu: ['Osaka kushiage kushikatsu (3818694686).jpg', 'Kushikatsu'],
   kakinoha: ['Kakinoha-zushi - 2.jpg', 'Kakinoha-Zushi'],
+  yomogi: ['Yomogi mochi.JPG', 'Yomogi Mochi'],
   okonomiyaki: ['Okonomiyaki 008.jpg', 'Okonomiyaki', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Okonomiyaki_008.jpg/960px-Okonomiyaki_008.jpg'],
   anagomeshi: ['Japanese anagomeshi.jpg', 'Anago-Meshi'],
   okinawa: ['Okinawa soba and goya chanpuru.jpg', 'Okinawa Soba und Gōya Champurū']
@@ -25,8 +27,8 @@ const foodPhotos = {
 const foodPhotoByDay = {
   1:'bento', 2:'gyudon', 3:'tendon', 4:'tonkatsu', 5:'teppanyaki', 6:'curryBread',
   7:'kaiseki', 8:'hoto', 9:'teishoku', 10:'seafood', 11:'hidaBeef', 12:'hidaBeef',
-  13:'yudofu', 14:'soba', 15:'teishoku', 16:'takoyaki', 17:'teishoku', 18:'kushikatsu',
-  19:'kakinoha', 20:'okonomiyaki', 21:'okonomiyaki', 22:'anagomeshi', 23:'okinawa',
+  13:'yudofu', 14:'tempura', 15:'teishoku', 16:'takoyaki', 17:'teishoku', 18:'kushikatsu',
+  19:'yomogi', 20:'okonomiyaki', 21:'okonomiyaki', 22:'anagomeshi', 23:'okinawa',
   24:'okinawa', 25:'okinawa', 26:'teishoku', 41:'bento'
 };
 
