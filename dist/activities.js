@@ -69,6 +69,9 @@ const activityPhotos = {
   ,pontocho: ['Pontocho Alley, Kyoto (52406641269).jpg', 'Sergiy Galyonkin', 'CC BY-SA 2.0']
   ,monkeyPark: ['Japanese Macaque at Arashiyama Monkey Park Iwatayama, Japan.jpg', 'Joli Rumi', 'CC BY-SA 4.0']
   ,wagyu: ['Wagyu beef (3590808325).jpg', 'beccapie', 'CC BY-SA 2.0']
+  ,kyotoMachiya: ['Machiya building.jpg', 'Japanexperterna.se', 'CC BY-SA 3.0']
+  ,tempura: ['Assorted Tempura.jpg', 'Sarah Ackerman', 'CC BY 2.0']
+  ,yomogiMochi: ['Yomogi mochi.JPG', 'Midori', 'CC BY-SA 3.0']
 };
 const activityImageUrls = {
   "asakusa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/640px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
@@ -146,7 +149,7 @@ const activities = [
   ['hakone-ryokan','Ryokan mit privatem Bad & Kaiseki','Hakone','7','Eine Nacht im Hakone Ginyu mit privatem Open-Air-Onsen sowie mehrgängigem japanischem Abendessen im Zimmer.','hakoneRyokan','must'],
   ['kawaguchi','Kawaguchi-See','Fuji','8','See am Fuß des Fuji, an dessen Ufer sich bei klarem Wetter Bergpanoramen öffnen.','fuji'],
   ['chureito','Chūreitō-Pagode','Fuji','8','Fünfstöckige Pagode oberhalb von Fujiyoshida mit einem bekannten Blick auf den Fuji.','chureito'],
-  ['mazda-fan-festa','Mazda Fan Festa 2027 · Termin offen','Fuji','7–8','Motorsport- und Markenevent am Fuji Speedway; nur einplanen, falls ein offizieller Termin 2027 zu den Reisedaten passt.','fujiSpeedway'],
+  ['mazda-fan-festa','Mazda Fan Festa 2027 · Termin offen','Fuji','8','Motorsport- und Markenevent am Fuji Speedway; nur einplanen, falls ein offizieller Termin 2027 zu den Reisedaten passt.','fujiSpeedway'],
   ['nagamachi','Nagamachi-Samurai-Viertel','Kanazawa','9','Historisches Viertel mit Lehmwänden, schmalen Gassen und einstigen Samurai-Residenzen.','nagamachi'],
   ['omicho','Ōmichō-Markt','Kanazawa','10','Lebendiger Markt mit Fisch, Obst und kleinen Essensständen im Zentrum von Kanazawa.','omicho'],
   ['kenrokuen','Kenrokuen-Garten','Kanazawa','10','Großer japanischer Landschaftsgarten mit Teichen, Brücken und sorgfältig angelegten Wegen.','kanazawa'],
@@ -158,14 +161,14 @@ const activities = [
   ['takayama-altstadt','Takayama-Altstadt','Shirakawa-gō / Takayama','12','Erhaltene Straßen mit dunklen Holzhäusern, kleinen Geschäften und traditioneller Atmosphäre.','takayama'],
   ['nintendo-museum','Nintendo Museum in Uji','Kyoto','13','Museum in einer früheren Nintendo-Fabrik mit Firmengeschichte, klassischen Spielen und interaktiven Installationen; Ticket-Losverfahren früh einplanen.','nintendoMuseum','must'],
   ['uji','Uji & Matcha','Kyoto','13','Ruhiger Vormittag in Uji mit Matcha und optional Byōdō-in als Ergänzung vor dem Nintendo Museum.','uji'],
-  ['kyoto-machiya','In einem Kyomachiya in Higashiyama wohnen','Kyoto','12–15','THE MACHIYA KAMIUMEYA verbindet ein renoviertes traditionelles Stadthaus mit privaten Hotelzimmern nahe Kiyomizu-dera.','higashiyama','must'],
+  ['kyoto-machiya','In einem Kyomachiya in Higashiyama wohnen','Kyoto','12–15','THE MACHIYA KAMIUMEYA verbindet ein renoviertes traditionelles Stadthaus mit privaten Hotelzimmern nahe Kiyomizu-dera.','kyotoMachiya','must'],
   ['fushimi','Fushimi Inari Taisha','Kyoto','14','Shintō-Schrein mit langen Wegen durch Tausende orangefarbene Torii am Berg Inari.','fushimi'],
   ['tofukuji','Tōfuku-ji','Kyoto','14','Große Zen-Tempelanlage mit Gärten und bekannten Ausblicken auf das bewaldete Tal.','tofukuji'],
   ['nishiki','Nishiki-Markt','Kyoto','13','Überdachte Einkaufsstraße mit Kyoto-Spezialitäten, Gewürzen und kleinen Imbissen.','nishiki'],
   ['kiyomizu','Kiyomizu-dera','Kyoto','14','Tempel am Hang über Kyoto, bekannt für seine große Holzterrasse.','kiyomizu'],
   ['yasaka-pagode','Yasaka-Pagode','Kyoto','14','Die fünfstöckige Pagode Hōkan-ji prägt die historische Gassenkulisse von Higashiyama.','yasakaPagoda'],
   ['higashiyama','Higashiyama & Gion','Kyoto','12–14','Historische Gassen und traditionelle Häuser zwischen den Tempeln und dem Geisha-Viertel.','higashiyama'],
-  ['tempura-endo','Tempura Endo Yasaka','Kyoto','14','Bekanntes Tempura-Restaurant in Gion; das Mittagsmenü ist die sinnvollere, günstigere Variante und sollte reserviert werden.','teppanyaki','must'],
+  ['tempura-endo','Tempura Endo Yasaka','Kyoto','14','Bekanntes Tempura-Restaurant in Gion; das Mittagsmenü ist die sinnvollere, günstigere Variante und sollte reserviert werden.','tempura','must'],
   ['pontocho','Pontochō Alley','Kyoto','12','Schmale Restaurantgasse am Kamo-Fluss mit besonders stimmungsvoller Atmosphäre am Abend.','pontocho'],
   ['ohmi-beef','Ōmi Beef / A5 Wagyu','Kyoto','12','Hochwertiges Wagyu aus Shiga als bewusst eingeplantes Abendessen rund um Pontochō.','wagyu'],
   ['togetsukyo','Togetsukyō-Brücke','Kyoto','15','Historische Brücke über den Katsura-Fluss und der klassische Auftakt für Arashiyama.','togetsukyo'],
@@ -185,7 +188,7 @@ const activities = [
   ['todaiji','Tōdai-ji','Nara','19','Buddhistischer Tempel mit einer monumentalen Halle und einer großen Buddha-Statue.','todaiji'],
   ['nara-park','Nara-Park','Nara','19','Großer Park zwischen Schreinen und Tempeln, in dem frei laufende Hirsche leben.','nara'],
   ['kasuga-taisha','Kasuga Taisha','Nara','19','Waldschrein mit rund 3.000 Stein- und Bronzelaternen entlang der Wege und Gebäude.','kasuga','must'],
-  ['yomogi-mochi','Yomogi Mochi in Nara','Nara','19','Grünes Mochi mit Beifußaroma und süßer Bohnenfüllung, frisch als Snack in der Innenstadt probieren.','nara'],
+  ['yomogi-mochi','Yomogi Mochi in Nara','Nara','19','Grünes Mochi mit Beifußaroma und süßer Bohnenfüllung, frisch als Snack in der Innenstadt probieren.','yomogiMochi'],
   ['peacepark','Hiroshima-Friedenspark & Museum','Hiroshima / Miyajima','20','Gedenkstätten und Museum vermitteln die Geschichte des Atombombenabwurfs und seine Folgen.','hiroshima'],
   ['mazda-museum','Mazda Museum & Werkstour','Hiroshima / Miyajima','21','Geführte Tour am Mazda-Hauptsitz mit Fahrzeuggeschichte, Wankelmotoren und Einblicken ins Werksgelände; kostenlose Reservierung ist Pflicht.','mazdaMuseum','must'],
   ['itsukushima','Itsukushima-Schrein','Hiroshima / Miyajima','22','Schrein auf Miyajima mit dem berühmten Torii im Wasser vor der Küste.','itsukushima'],
