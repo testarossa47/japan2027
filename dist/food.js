@@ -13,7 +13,7 @@ const foodPhotos = {
   seafood: ['Sushi platter.jpg', 'Fischgericht und Markt-Snacks'],
   hidaBeef: ['Grilling Hida Beef (Takayama Street Food) (35910429046).jpg', 'Hida-Rind', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Grilling_Hida_Beef_%28Takayama_Street_Food%29_%2835910429046%29.jpg/500px-Grilling_Hida_Beef_%28Takayama_Street_Food%29_%2835910429046%29.jpg'],
   yudofu: ['Yudofu.jpg', 'Yudōfu'],
-  soba: ['JapaneseFood.JPG', 'Soba', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/JapaneseFood.JPG/640px-JapaneseFood.JPG'],
+  soba: ['Two bowls of soba noodles with chopsticks 2.jpg', 'Soba', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Two_bowls_of_soba_noodles_with_chopsticks_2.jpg/960px-Two_bowls_of_soba_noodles_with_chopsticks_2.jpg'],
   takoyaki: ['Japanese Takoyaki.jpg', 'Takoyaki', 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Japanese_Takoyaki.jpg/960px-Japanese_Takoyaki.jpg'],
   kushikatsu: ['Osaka kushiage kushikatsu (3818694686).jpg', 'Kushikatsu'],
   kakinoha: ['Kakinoha-zushi - 2.jpg', 'Kakinoha-Zushi'],
