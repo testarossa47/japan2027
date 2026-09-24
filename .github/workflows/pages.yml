@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
+      - name: Bilder lokal einbetten
+        run: node scripts/vendor-images.mjs
       - name: GitHub Pages konfigurieren
         uses: actions/configure-pages@v5
         with:
