@@ -58,14 +58,13 @@
     item('laptop','Laptop für Remote-Arbeit',1,'Elektronik',true,true,'Nicht per Takkyūbin versenden; im Rucksack selbst tragen.'),
     item('laptop-charger','Laptop-Ladegerät',1,'Elektronik',true,true),
     item('laptop-sleeve','Gepolsterte Laptop-Hülle',1,'Elektronik',true,true),
-    item('remote-work-kit','Kleine Maus oder USB-C-Hub',1,'Elektronik',true,true,'Nur mitnehmen, was du für die Arbeit wirklich brauchst.'),
     item('camera-body','Kamera',1,'Kamera',true,true,'Wertgegenstände nicht per Takkyūbin versenden.'),
     item('camera-lenses','Objektive',2,'Kamera',true,true),
     item('camera-batteries','Kamera-Akkus',3,'Kamera',true,true,'Ersatzakkus gehören ins Handgepäck.'),
     item('memory-cards','Speicherkarten',3,'Kamera',true,true),
     item('camera-charger','Kamera-Ladegerät',1,'Kamera',true,true),
     item('camera-cleaning','Mikrofasertuch und Blasebalg',1,'Kamera',true,true),
-    item('cabin-suitcase','Kabinenkoffer',1,'Reisealltag',false,false,'Masse und Gewichtslimit aller gebuchten Airlines prüfen.'),
+    item('cabin-suitcase','Kabinenkoffer',1,'Reisealltag',false,false,'Zielgewicht: höchstens 10 kg; Masse und Limit der gebuchten Airlines trotzdem prüfen.'),
     item('daypack','Kleiner Tages- und Übernachtungsrucksack',1,'Reisealltag',true,true,'Für Fuji sowie Shirakawa-gō und Takayama.'),
     item('packing-cubes','Packwürfel',3,'Reisealltag',false,false),
     item('laundry-bag','Wäschebeutel',1,'Reisealltag',false,false),
@@ -111,6 +110,10 @@
       DEFAULT_ITEMS.forEach(value=>{if(!ids.has(value.id))current.push({...value});});
       const smart=current.find(value=>value.id==='smart-outfit'&&value.name==='Ordentliches Outfit für Bethel und Mitarbeit');
       if(smart){smart.name='Schickes Outfit für Bethel und Mitarbeit';smart.note='Knitterarme Kombination aus Oberteil, Hose oder Rock und passenden Schuhen.';}
+      const cabin=current.find(value=>value.id==='cabin-suitcase'&&value.note==='Masse und Gewichtslimit aller gebuchten Airlines prüfen.');
+      if(cabin)cabin.note='Zielgewicht: höchstens 10 kg; Masse und Limit der gebuchten Airlines trotzdem prüfen.';
+      const remoteKit=current.find(value=>value.id==='remote-work-kit'&&!value.custom&&value.name==='Kleine Maus oder USB-C-Hub');
+      if(remoteKit)current.splice(current.indexOf(remoteKit),1);
       return current;
     }catch{return cloneDefaults();}
   }
