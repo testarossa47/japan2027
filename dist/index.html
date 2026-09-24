@@ -174,17 +174,17 @@
       {number:'1A',place:'Ebina · Bethel Japan',days:'Tag 6',day:6,lat:35.4311,lng:139.38472,photo:'ebina',summary:'Reservierte Führung im japanischen Zweigbüro und seine Ausstellungen.'},
       {number:'2',place:'Kamakura',days:'Tag 6',day:6,lat:35.3192,lng:139.5467,photo:'kamakura',summary:'Historische Tempelstadt und Curry Bread.'},
       {number:'3',place:'Yokohama',days:'Tag 6',day:6,lat:35.4437,lng:139.6380,photo:'yokohamaHarbor',summary:'Hafenpromenade und Chinatown.'},
-      {number:'4',place:'Kawaguchiko',days:'Tag 7–8',day:7,lat:35.5171,lng:138.7518,photo:'fuji',summary:'Fuji-Aussichten, See und Chūreitō-Pagode.'},
-      {number:'5',place:'Kanazawa',days:'Tag 9–10',day:9,lat:36.5613,lng:136.6562,photo:'kanazawa',summary:'Nagamachi, Ōmichō-Markt und Kenrokuen.'},
-      {number:'6',place:'Shirakawa-gō',days:'Tag 11',day:11,lat:36.2606,lng:136.9060,photo:'shirakawa',summary:'Bergdorf mit Gasshō-Häusern und Pudding.'},
-      {number:'7',place:'Takayama',days:'Tag 11–12',day:11,lat:36.1461,lng:137.2522,photo:'takayama',summary:'Hida-Rind, Altstadt und Shōwa-Museum.'},
-      {number:'8',place:'Kyoto',days:'Tag 12–15',day:12,lat:35.0116,lng:135.7681,photo:'fushimi',summary:'Torii, Tempel, Gärten und historische Viertel.'},
-      {number:'8A',place:'Uji',days:'Tag 13',day:13,lat:34.8903,lng:135.8000,photo:'uji',summary:'Matcha, Byōdō-in und Nintendo Museum.'},
-      {number:'9',place:'Osaka',days:'Tag 16–19 & 26–40',day:16,lat:34.6937,lng:135.5023,photo:'dotonbori',summary:'Dōtonbori, Märkte, Ausflüge und später die Mitarbeit.'},
-      {number:'10',place:'Nara',days:'Tag 19',day:19,lat:34.6851,lng:135.8048,photo:'nara',summary:'Tōdai-ji und Nara-Park als Tagesausflug.'},
-      {number:'11',place:'Hiroshima',days:'Tag 20–22',day:20,lat:34.3853,lng:132.4553,photo:'hiroshima',summary:'Friedenspark, Mazda Museum und Basis für Miyajima.'},
-      {number:'12',place:'Miyajima',days:'Tag 22',day:22,lat:34.2959,lng:132.3198,photo:'itsukushima',summary:'Itsukushima-Schrein und optional Berg Misen.'},
-      {number:'13',place:'Naha · Okinawa',days:'Tag 23–25',day:23,lat:26.2124,lng:127.6809,photo:'okinawaCoast',summary:'Ryūkyū-Geschichte, Küste, Märkte und Natur.'},
+      {number:'5',place:'Kawaguchiko',days:'Tag 8',day:8,lat:35.5171,lng:138.7518,photo:'fuji',summary:'Fuji-Aussichten, See und Chūreitō-Pagode.'},
+      {number:'6',place:'Kanazawa',days:'Tag 9–10',day:9,lat:36.5613,lng:136.6562,photo:'kanazawa',summary:'Nagamachi, Ōmichō-Markt und Kenrokuen.'},
+      {number:'7',place:'Shirakawa-gō',days:'Tag 11',day:11,lat:36.2606,lng:136.9060,photo:'shirakawa',summary:'Bergdorf mit Gasshō-Häusern und Pudding.'},
+      {number:'8',place:'Takayama',days:'Tag 11–12',day:11,lat:36.1461,lng:137.2522,photo:'takayama',summary:'Hida-Rind, Altstadt und Shōwa-Museum.'},
+      {number:'9',place:'Kyoto',days:'Tag 12–15',day:12,lat:35.0116,lng:135.7681,photo:'fushimi',summary:'Torii, Tempel, Gärten und historische Viertel.'},
+      {number:'9A',place:'Uji',days:'Tag 13',day:13,lat:34.8903,lng:135.8000,photo:'uji',summary:'Matcha, Byōdō-in und Nintendo Museum.'},
+      {number:'10',place:'Osaka',days:'Tag 16–19 & 26–40',day:16,lat:34.6937,lng:135.5023,photo:'dotonbori',summary:'Dōtonbori, Märkte, Ausflüge und später die Mitarbeit.'},
+      {number:'11',place:'Nara',days:'Tag 19',day:19,lat:34.6851,lng:135.8048,photo:'nara',summary:'Tōdai-ji und Nara-Park als Tagesausflug.'},
+      {number:'12',place:'Hiroshima',days:'Tag 20–22',day:20,lat:34.3853,lng:132.4553,photo:'hiroshima',summary:'Friedenspark, Mazda Museum und Basis für Miyajima.'},
+      {number:'13',place:'Miyajima',days:'Tag 22',day:22,lat:34.2959,lng:132.3198,photo:'itsukushima',summary:'Itsukushima-Schrein und optional Berg Misen.'},
+      {number:'14',place:'Naha · Okinawa',days:'Tag 23–25',day:23,lat:26.2124,lng:127.6809,photo:'okinawaCoast',summary:'Ryūkyū-Geschichte, Küste, Märkte und Natur.'},
       {number:'4',place:'Hakone',days:'Tag 7',day:7,lat:35.2324,lng:139.1069,photo:'hakone',summary:'Ōwakudani, Hakone-Schrein und Ryokan mit privatem Onsen.'}
     ];
     const format=(n)=>new Intl.NumberFormat('de-CH').format(n);
@@ -264,7 +264,8 @@
     let tripMap,dayMap;
     function initMap(){
       const list=document.getElementById('mapStopList');
-      list.innerHTML=tripStops.map((s,i)=>`<button type="button" class="stop-button" data-stop="${i}" aria-label="${esc(s.place)} auf der Karte zeigen"><span class="stop-number">${esc(s.number)}</span><span><strong>${esc(s.place)}</strong><small>${esc(s.days)}</small></span></button>`).join('');
+      const stopOrder=[0,1,2,3,15,4,5,6,7,8,9,10,11,12,13,14];
+      list.innerHTML=stopOrder.map(i=>{const s=tripStops[i];return `<button type="button" class="stop-button" data-stop="${i}" aria-label="${esc(s.place)} auf der Karte zeigen"><span class="stop-number">${esc(s.number)}</span><span><strong>${esc(s.place)}</strong><small>${esc(s.days)}</small></span></button>`}).join('');
       const mapNode=document.getElementById('tripMap');
       if(!window.L){mapNode.innerHTML='<div class="map-error">Die Karte konnte nicht geladen werden. Die Stationen bleiben im Reiseverlauf verfügbar.</div>';return}
       mapNode.innerHTML='';
@@ -282,7 +283,7 @@
       L.polyline([point(12),point(14)],{color:'#286b8d',weight:3,opacity:.85,dashArray:'8 8'}).addTo(tripMap);
       L.polyline([point(14),point(10)],{color:'#286b8d',weight:3,opacity:.85,dashArray:'8 8'}).addTo(tripMap);
       tripMap.fitBounds(tripStops.map(s=>[s.lat,s.lng]),{padding:[24,24]});
-      function setActiveStop(i){document.querySelectorAll('.stop-button').forEach((b,n)=>b.classList.toggle('active',n===i))}
+      function setActiveStop(i){document.querySelectorAll('.stop-button').forEach(b=>b.classList.toggle('active',Number(b.dataset.stop)===i))}
       list.addEventListener('click',e=>{const button=e.target.closest('[data-stop]');if(!button)return;const i=Number(button.dataset.stop),s=tripStops[i];setActiveStop(i);tripMap.flyTo([s.lat,s.lng],Math.max(tripMap.getZoom(),8),{duration:.65});markers[i].openPopup()});
     }
     function stopsForDay(n){
