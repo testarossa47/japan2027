@@ -5,6 +5,17 @@ import vm from 'node:vm';
 const ROOT = new URL('..', import.meta.url).pathname;
 const DIST = join(ROOT, 'dist');
 const USER_AGENT = 'japan2027-image-vendor/1.0 (GitHub Pages build)';
+const MIN_REQUEST_INTERVAL_MS = 900;
+let nextRequestAt = 0;
+
+const sleep = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds));
+
+async function waitForRequestSlot() {
+  const now = Date.now();
+  const wait = Math.max(0, nextRequestAt - now);
+  nextRequestAt = Math.max(nextRequestAt, now) + MIN_REQUEST_INTERVAL_MS;
+  if (wait) await sleep(wait);
+}
 
 async function readPhotoMap(fileName, variableName) {
   const source = await readFile(join(DIST, fileName), 'utf8');
@@ -28,19 +39,26 @@ function commonsImageUrl(fileName) {
 async function fetchImage(fileName) {
   const url = commonsImageUrl(fileName);
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
     try {
+      await waitForRequestSlot();
       const response = await fetch(url, {
         redirect: 'follow',
         headers: { 'user-agent': USER_AGENT, accept: 'image/*' }
       });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (!response.ok) {
+        if (response.status === 429) {
+          const retryAfter = Number(response.headers.get('retry-after'));
+          await sleep(Number.isFinite(retryAfter) ? retryAfter * 1_000 : attempt * 15_000);
+        }
+        throw new Error(`HTTP ${response.status}`);
+      }
       const type = response.headers.get('content-type') || '';
       if (!type.startsWith('image/')) throw new Error(`unexpected content-type ${type}`);
       return new Uint8Array(await response.arrayBuffer());
     } catch (error) {
       lastError = error;
-      if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 1_500));
+      if (attempt < 4 && !String(error).includes('HTTP 429')) await sleep(attempt * 2_000);
     }
   }
   throw new Error(`Could not download ${fileName}: ${lastError?.message || lastError}`);
