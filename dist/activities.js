@@ -72,6 +72,14 @@ const activityPhotos = {
   ,kyotoMachiya: ['Machiya building.jpg', 'Japanexperterna.se', 'CC BY-SA 3.0']
   ,tempura: ['Assorted Tempura.jpg', 'Sarah Ackerman', 'CC BY 2.0']
   ,yomogiMochi: ['Yomogi mochi.JPG', 'Midori', 'CC BY-SA 3.0']
+  ,himeji: ['Himeji castle.jpg', 'Drivephotographer', 'CC0 1.0']
+  ,kinosakiRiver: ['Otanigawa River in Kinosaki Onsen.jpg', 'そらみみ', 'CC BY-SA 3.0']
+  ,kaniCroquette: ['カニクリームコロッケをウーバーで.jpg', '経済特区', 'CC BY-SA 4.0']
+  ,kinosakiKaiseki: ['Kaiseki (21895422222).jpg', 'Nishimuraya Kinosaki Onsen', 'CC BY 2.0']
+  ,kurashikiCanal: ['Kurashiki Canal Area.jpg', 'Malaiya', 'CC BY-SA 4.0']
+  ,oharaMuseum: ['080727 Ohara Museum of Art Kurashiki Okayama pref Japan01s3.jpg', '663highland', 'CC BY-SA 4.0']
+  ,kurashikiMachiya: ['Kurashiki Ohashi House01n4592.jpg', '663highland', 'CC BY-SA 3.0']
+  ,kojimaDenim: ['Kojima Jeans Street 2021-08 ac (8).jpg', 'Asturio Cantabrio', 'CC BY-SA 4.0']
 };
 const activityImageUrls = {
   "asakusa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/640px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
@@ -189,6 +197,14 @@ const activities = [
   ['nara-park','Nara-Park','Nara','19','Großer Park zwischen Schreinen und Tempeln, in dem frei laufende Hirsche leben.','nara'],
   ['kasuga-taisha','Kasuga Taisha','Nara','19','Waldschrein mit rund 3.000 Stein- und Bronzelaternen entlang der Wege und Gebäude.','kasuga','must'],
   ['yomogi-mochi','Yomogi Mochi in Nara','Nara','19','Grünes Mochi mit Beifußaroma und süßer Bohnenfüllung, frisch als Snack in der Innenstadt probieren.','yomogiMochi'],
+  ['kinosaki-fluss','Kinosaki am Ōtani-Fluss','Kinosaki','18–19','Stimmungsvoller Onsen-Ort mit weidengesäumtem Fluss, kleinen Steinbrücken und traditionellen Holzhäusern; als Übernachtungsalternative zum Osaka-/Nara-Block vormerken.','kinosakiRiver','maybe'],
+  ['kani-kurimu-korokke','Kani Kurīmu Korokke','Kinosaki','18–19','Knusprige Kroketten mit cremiger Krabbenfüllung als kleiner Snack zwischen Flussspaziergang und Onsen probieren.','kaniCroquette','maybe'],
+  ['kinosaki-ryokan','Ryokan & Kaiseki in Kinosaki','Kinosaki','18–19','Eine Nacht im 350 Jahre alten Yamamotoya am Fluss mit Tatami-Zimmer, Yukata, Onsen und mehrgängigem Kaiseki; die private Freiluftbad-Option bei der Buchung prüfen.','kinosakiKaiseki','maybe'],
+  ['himeji-castle','Himeji-jō','Himeji','20','Japans eindrucksvollste erhaltene Burganlage und UNESCO-Welterbe; der weiße Hauptturm und das ausgeklügelte Verteidigungssystem lohnen einen halben Tag.','himeji','must'],
+  ['kurashiki-bikan','Kurashiki Bikan Altstadt','Kurashiki','20','Historisches Viertel mit weiß verputzten Speicherhäusern, Weiden, Kanal und kleinen Brücken – daher oft als Venedig Japans beschrieben.','kurashikiCanal','maybe'],
+  ['ohara-museum','Ōhara Museum of Art','Kurashiki','20','Japans erstes privates Museum für westliche Kunst zeigt eine ungewöhnlich internationale Sammlung mitten in der historischen Altstadt.','oharaMuseum','maybe'],
+  ['kurashiki-machiya','In einer Machiya in Kurashiki wohnen','Kurashiki','20','Eine Nacht in der renovierten, über hundert Jahre alten Onzaki Machiya no Yado von toutou macht die Altstadt auch nach den Tagesgästen erlebbar.','kurashikiMachiya','maybe'],
+  ['kojima-denim','Kojima Jeans Street','Kurashiki','20','Kojima gilt als Geburtsort japanischer Jeans; die Einkaufsstraße bündelt kleine Denim-Marken, Werkstätten und ungewöhnliche Souvenirs.','kojimaDenim','maybe'],
   ['peacepark','Hiroshima-Friedenspark & Museum','Hiroshima / Miyajima','20','Gedenkstätten und Museum vermitteln die Geschichte des Atombombenabwurfs und seine Folgen.','hiroshima'],
   ['mazda-museum','Mazda Museum & Werkstour','Hiroshima / Miyajima','21','Geführte Tour am Mazda-Hauptsitz mit Fahrzeuggeschichte, Wankelmotoren und Einblicken ins Werksgelände; kostenlose Reservierung ist Pflicht.','mazdaMuseum','must'],
   ['itsukushima','Itsukushima-Schrein','Hiroshima / Miyajima','22','Schrein auf Miyajima mit dem berühmten Torii im Wasser vor der Küste.','itsukushima'],
