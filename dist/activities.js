@@ -61,6 +61,11 @@ const activityImageUrls = {
   "itsukushima": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/20190318_Itsukushima_Shrine_lantern.jpg/640px-20190318_Itsukushima_Shrine_lantern.jpg",
   "naha": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alley_in_Naha%2C_Okinawa%2C_at_night.jpg/640px-Alley_in_Naha%2C_Okinawa%2C_at_night.jpg"
 };
+// Resolve every image through its canonical Commons filename. This avoids brittle
+// hand-written thumbnail hash paths and lets Commons select a working rendition.
+for (const [key, [file]] of Object.entries(activityPhotos)) {
+  activityImageUrls[key] = `https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(file.replaceAll(' ', '_'))}?width=640`;
+}
 // The photo is an illustrated view of the region when the exact subject has no verified photo.
 const activities = [
   ['asakusa','Asakusa & Sensō-ji','Tokyo','3','Altstadtviertel mit dem großen Sensō-ji-Tempel, dem Kaminarimon-Tor und der Ladenstraße Nakamise.','asakusa'],
