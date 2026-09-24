@@ -24,6 +24,11 @@ const foodPhotos = {
   okinawa: ['Okinawa soba and goya chanpuru.jpg', 'Okinawa Soba und Gōya Champurū']
 };
 
+// Images are copied into the Pages artifact by scripts/vendor-images.mjs.
+for (const [key, value] of Object.entries(foodPhotos)) {
+  value[2] = `./images/food/${key}.jpg`;
+}
+
 const foodPhotoByDay = {
   1:'bento', 2:'gyudon', 3:'tendon', 4:'tonkatsu', 5:'teppanyaki', 6:'curryBread',
   7:'kaiseki', 8:'hoto', 9:'teishoku', 10:'seafood', 11:'hidaBeef', 12:'hidaBeef',
