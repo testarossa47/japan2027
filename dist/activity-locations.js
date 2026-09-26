@@ -21,6 +21,7 @@ const activityLocations = {
   'golden-gai':[35.6938,139.7047],
   'karaoke':[35.6944,139.7020],
   'mori-tower':[35.6605,139.7292],
+  'teamlab-borderless':[35.6609,139.7407],
   'odaiba':[35.6251,139.7755],
   'ginza-shopping':[35.6710,139.7640],
   'secondhand':[35.6615,139.6680],
