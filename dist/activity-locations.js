@@ -5,7 +5,6 @@ const activityLocations = {
   'ueno':[35.7140,139.7740],
   'akihabara':[35.6984,139.7730],
   'meiji':[35.6764,139.6993],
-  'yoyogi':[35.6717,139.6949],
   'harajuku':[35.6702,139.7027],
   'nintendo-tokyo':[35.6617,139.6987],
   'bitcoin-meetup':[35.6870,139.7297],
