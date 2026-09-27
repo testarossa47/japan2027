@@ -84,7 +84,7 @@ const activityPhotos = {
   ,shimanami: ['Shimanami kaidō to Tatara Bridge.jpg', 'Fabimaru', 'Lizenz auf Bildseite']
   ,matsuyamaCastle: ['Matsuyama Castle.jpg', 'Drivephotographer', 'Lizenz auf Bildseite']
   ,fukuokaYatai: ['Nakasu Yatai Stalls (19979437930).jpg', 'Wikimedia Commons', 'Lizenz auf Bildseite']
-  ,nanzoin: ['Reclining Buddha in Nanzoin Temple.jpg', 'Wikimedia Commons', 'Lizenz auf Bildseite']
+  ,nanzoin: ['Bell tower near Reclining Buddha in Nanzoin Temple.jpg', 'Wikimedia Commons', 'Lizenz auf Bildseite']
   ,canalCity: ['Canal city hakata fukuoka.jpg', 'FlyingToaster', 'Lizenz auf Bildseite']
   ,hakataRamen: ['Hakata ramen.JPG', 'Wikimedia Commons', 'Lizenz auf Bildseite']
   ,beppu: ['Beppu Hot Springs (31338411912).jpg', 'David Stanley', 'CC BY 2.0']
