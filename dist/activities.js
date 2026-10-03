@@ -166,6 +166,8 @@ for (const [key, [file]] of Object.entries(activityPhotos)) {
   const extension = file.toLowerCase().endsWith('.svg') ? 'svg' : 'jpg';
   activityImageUrls[key] = `./images/activities/${key}.${extension}`;
 }
+// Food stops are kept as selectable ideas, but rendered separately from sights and experiences.
+const foodActivityIds = new Set(["teppanyaki","omoide-yokocho","ramen","karepan","pudding","hidabeef","tempura-endo","ohmi-beef","takoyaki","kushikatsu","yomogi-mochi","kani-kurimu-korokke","fukuoka-yatai","shin-shin-ramen","hiroshima-okonomiyaki","miyajima-oysters","miyajima-beef-korokke","tempura-momiji","kitakata-ramen","morioka-noodles"]);
 // The photo is an illustrated view of the region when the exact subject has no verified photo.
 const activities = [
   ['asakusa','Asakusa & Sensō-ji','Tokyo','3','Altstadtviertel mit dem großen Sensō-ji-Tempel, dem Kaminarimon-Tor und der Ladenstraße Nakamise.','asakusa'],
@@ -293,4 +295,4 @@ const activities = [
   ,['tsuru-no-yu','Tsuru-no-Yu Onsen','Nordjapan','Route offen','Abgelegenes, traditionelles Berg-Onsen in Nyūtō Onsenkyō mit milchigem Thermalwasser und rustikalen Holzbauten.','tsurunoyu','maybe']
   ,['takkoku-no-iwaya','Takkoku-no-Iwaya','Nordjapan','Route offen','Ungewöhnlicher Tempel bei Hiraizumi, dessen Bishamondō-Halle direkt an und teilweise unter die Felswand gebaut ist.','takkoku','maybe']
   ,['sapporo-hokkaido','Sapporo & Hokkaidō','Hokkaidō','Route offen','Sapporo als kulinarische Basis für Hokkaidō mit Miso-Ramen, Seafood und Bier; für die Insel besser einen eigenen mehrtägigen Reiseblock vorsehen.','sapporo','maybe']
-].map(([id,title,region,day,description,photo,defaultChoice])=>({id,title,region,day,description,photo,defaultChoice}));
+].map(([id,title,region,day,description,photo,defaultChoice])=>({id,title,region,day,description,photo,defaultChoice,type:foodActivityIds.has(id)?'food':'activity'}));
