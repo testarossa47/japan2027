@@ -127,6 +127,7 @@ const activityPhotos = {
   ,misenView: ['Islands in the Seto Inland Sea (6156171198).jpg', 'Wikimedia Commons contributor', 'CC BY 2.0']
   ,miyajimaCroquette: ['Japanese Croquette.jpg', 'Shene81', 'Lizenz auf Bildseite']
   ,bitcoinMeetup: ['Shimokitazawa OpenSource Cafe.jpg', 'Tsutomu Kawamura', 'CC BY-SA 3.0']
+  ,ghibliMuseum: ['Ghibli Museum.jpg', 'Douglas Paul Perkins', 'Public Domain']
 };
 const activityImageUrls = {
   "asakusa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/640px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
@@ -173,6 +174,7 @@ const activities = [
   ['meiji','Meiji Jingū & Yoyogi-Park','Tokyo','4','Der große Waldschrein und der direkt angrenzende Yoyogi-Park bilden zusammen eine ruhige grüne Etappe zwischen Harajuku und Shibuya.','meiji'],
   ['harajuku','Harajuku & Shibuya','Tokyo','4','Zwei kontrastreiche Viertel mit Streetfashion, Läden und der berühmten Shibuya-Kreuzung.','harajukuStreet'],
   ['nintendo-tokyo','Nintendo TOKYO','Tokyo','4','Offizieller Nintendo Store im Shibuya PARCO mit Spielen, Figuren und exklusiven Store-Artikeln; ein Store auf der Reise genügt.','nintendoTokyo','must'],
+  ['ghibli-museum','Studio Ghibli Museum','Tokyo','4','Verspieltes Animationsmuseum in Mitaka mit Originalentwürfen, Ausstellungsräumen und einem exklusiven Kurzfilm; nur mit vorab gebuchtem Ticket und festem Eintrittszeitfenster.','ghibliMuseum','maybe'],
   ['bitcoin-meetup','Bitcoin-Meetup in Tokyo','Tokyo','4','Abendliches Treffen bei Tokyo Bitcoin Base in Yotsuya, um Bitcoiner aus Japan kennenzulernen; den konkreten Oktober-Termin 2027 abwarten und bei Bedarf mit einem anderen Tokyo-Abend tauschen.','bitcoinMeetup','must'],
   ['shinjuku','Shinjuku Gyoen','Tokyo','5','Weitläufiger Landschaftsgarten mit Teichen und verschiedenen Gartenstilen.','shinjukuGyoen'],
   ['metro','Tokyo Metropolitan Government Building','Tokyo','5','Kostenlose Aussichtsplattform in Shinjuku mit weitem Blick über die Stadt.','tokyoMetro'],
