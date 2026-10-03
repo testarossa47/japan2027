@@ -107,6 +107,26 @@ const activityPhotos = {
   ,tsurunoyu: ['Tsurunoyu Onsen 02.jpg', '津島修三', 'CC BY-SA 2.0']
   ,takkoku: ['230728 Takkoku-no-iwaya Bishamondo Hiraizumi Iwate pref Japan05s3.jpg', '663highland', 'CC BY-SA 4.0']
   ,sapporo: ['Sapporo City Skyline.jpg', 'ノボホショコロトソ', 'CC BY 4.0']
+  ,harajukuStreet: ['Takeshita Street in Harajuku.jpg', 'Dylan McGannon', 'Public Domain']
+  ,kabukicho: ['Kabukicho red gate and colorful neon street signs at night, Shinjuku, Tokyo, Japan.jpg', 'Basile Morin', 'CC BY-SA 4.0']
+  ,karaokeRoom: ['Room 601, Karaoke Kan, Tokyo.jpg', 'Wikimedia Commons contributor', 'Lizenz auf Bildseite']
+  ,moriTowerView: ['Tokyo View from Mori Tower.jpg', 'Japanexperterna.se', 'CC BY-SA 3.0']
+  ,odaibaView: ['Tokyo-Odaiba.jpg', 'Wikimedia Commons contributor', 'CC BY-SA 4.0']
+  ,ramenBowl: ['Tonkotsu Ramen "Akamaru" @ Ippudo @ Ueno (14129934403).jpg', 'Wikimedia Commons contributor', 'Lizenz auf Bildseite']
+  ,capsuleHotel: ['First Cabin Ichigaya Capsule.jpg', 'Kanesue', 'Lizenz auf Bildseite']
+  ,loveHotel: ['Love Hotel - Tokyo.jpg', 'Jason7825', 'CC BY-SA 3.0']
+  ,tokyoGameCenter: ['Japanese shmup arcade.jpg', 'Wikimedia Commons contributor', 'CC BY-SA 4.0']
+  ,ginzaShopping: ['Ginza at night.jpg', 'Trueshow111', 'CC BY-SA 4.0']
+  ,secondHand: ['Storefront in Koenji (53415763617).jpg', 'Wikimedia Commons contributor', 'CC BY 2.0']
+  ,osakaArcade: ['Taiko no tatsujin arcade machine.jpg', 'IMKSv', 'CC BY-SA 4.0']
+  ,kushikatsu: ['Osaka kushiage kushikatsu (3818694686).jpg', 'Wikimedia Commons contributor', 'Lizenz auf Bildseite']
+  ,dinoHotel: ['2019-08-06 Henn na Hotel,Osaka-Shinsaibashi (変なホテル大阪心斎橋)DSCF9229.jpg', '松岡明芳', 'Lizenz auf Bildseite']
+  ,shirakawaPudding: ['Japanese Caramel Custard Pudding, Purin, Flan.jpg', 'Wikimedia Commons contributor', 'Lizenz auf Bildseite']
+  ,takayamaShowa: ['Takayama Showa Kan - panoramio.jpg', 'Wikimedia Commons contributor', 'Lizenz auf Bildseite']
+  ,hiroshimaOkonomiyaki: ['Hiroshima-Style Okonomiyaki (40283556800).jpg', 'Wikimedia Commons contributor', 'CC BY 2.0']
+  ,misenView: ['Islands in the Seto Inland Sea (6156171198).jpg', 'Wikimedia Commons contributor', 'CC BY 2.0']
+  ,miyajimaCroquette: ['Japanese Croquette.jpg', 'Shene81', 'Lizenz auf Bildseite']
+  ,bitcoinMeetup: ['Shimokitazawa OpenSource Cafe.jpg', 'Tsutomu Kawamura', 'CC BY-SA 3.0']
 };
 const activityImageUrls = {
   "asakusa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/640px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
@@ -151,9 +171,9 @@ const activities = [
   ['ueno','Ueno-Park & Ameyoko','Tokyo','3','Großer Stadtpark und lebendige Einkaufsstraße, die sich gut zu einem Spaziergang verbinden lassen.','ueno'],
   ['akihabara','Akihabara & Spielhallen','Tokyo','3','Elektronik-, Anime- und Gamingviertel mit mehrstöckigen Arcades voller Automaten.','arcade'],
   ['meiji','Meiji Jingū & Yoyogi-Park','Tokyo','4','Der große Waldschrein und der direkt angrenzende Yoyogi-Park bilden zusammen eine ruhige grüne Etappe zwischen Harajuku und Shibuya.','meiji'],
-  ['harajuku','Harajuku & Shibuya','Tokyo','4','Zwei kontrastreiche Viertel mit Streetfashion, Läden und der berühmten Shibuya-Kreuzung.','shibuya'],
+  ['harajuku','Harajuku & Shibuya','Tokyo','4','Zwei kontrastreiche Viertel mit Streetfashion, Läden und der berühmten Shibuya-Kreuzung.','harajukuStreet'],
   ['nintendo-tokyo','Nintendo TOKYO','Tokyo','4','Offizieller Nintendo Store im Shibuya PARCO mit Spielen, Figuren und exklusiven Store-Artikeln; ein Store auf der Reise genügt.','nintendoTokyo','must'],
-  ['bitcoin-meetup','Bitcoin-Meetup in Tokyo','Tokyo','4','Abendliches Treffen bei Tokyo Bitcoin Base in Yotsuya, um Bitcoiner aus Japan kennenzulernen; den konkreten Oktober-Termin 2027 abwarten und bei Bedarf mit einem anderen Tokyo-Abend tauschen.','bitcoin','must'],
+  ['bitcoin-meetup','Bitcoin-Meetup in Tokyo','Tokyo','4','Abendliches Treffen bei Tokyo Bitcoin Base in Yotsuya, um Bitcoiner aus Japan kennenzulernen; den konkreten Oktober-Termin 2027 abwarten und bei Bedarf mit einem anderen Tokyo-Abend tauschen.','bitcoinMeetup','must'],
   ['shinjuku','Shinjuku Gyoen','Tokyo','5','Weitläufiger Landschaftsgarten mit Teichen und verschiedenen Gartenstilen.','shinjukuGyoen'],
   ['metro','Tokyo Metropolitan Government Building','Tokyo','5','Kostenlose Aussichtsplattform in Shinjuku mit weitem Blick über die Stadt.','tokyoMetro'],
   ['oi-flohmarkt','Tokyo City Flea Market am Oi Racecourse','Tokyo','5','Großer Wochenend-Flohmarkt auf dem Parkplatz der Pferderennbahn mit Vintagekleidung, Haushaltswaren und Sammlerstücken.','fleaMarket','must'],
@@ -161,19 +181,19 @@ const activities = [
   ['seiko-museum','Seiko Museum Ginza','Tokyo','5','Museum zur Geschichte der Zeitmessung und Seikos technischer Entwicklung; für Uhrenfans etwa 90 Minuten und eine Reservierung vorsehen.','seikoMuseum','must'],
   ['seiko-ginza','Seiko Dream Square & Seiko House','Tokyo','5','Brand Experience, Uhrenvergleich und der historische Uhrturm liegen nur wenige Gehminuten vom Seiko Museum entfernt.','seikoHouse','must'],
   ['shibuya-crossing','Shibuya Crossing & Shopping','Tokyo','4','Die berühmte Kreuzung, Shibuya PARCO und die umliegenden Kaufhäuser verbinden Stadtpanorama, Gaming und Shopping.','shibuya','must'],
-  ['shinjuku-kabukicho','Shinjuku & Kabukichō','Tokyo','5','Dichtes Nachtviertel mit riesigen Leuchtreklamen, Hochhäusern und einer futuristischen Großstadtatmosphäre.','tokyoMetro','must'],
+  ['shinjuku-kabukicho','Shinjuku & Kabukichō','Tokyo','5','Dichtes Nachtviertel mit riesigen Leuchtreklamen, Hochhäusern und einer futuristischen Großstadtatmosphäre.','kabukicho','must'],
   ['omoide-yokocho','Omoide Yokochō & Yakitori','Tokyo','5','Ein Labyrinth enger Gassen mit winzigen Grilllokalen; am Abend Yakitori-Spieße an einem klar ausgezeichneten Stand probieren.','omoide'],
   ['golden-gai','Golden Gai','Tokyo','5','Kompaktes Viertel mit winzigen Retro-Bars; nur Lokale mit klaren Preisen wählen und niemals Straßenwerbern folgen.','goldenGai'],
-  ['karaoke','Karaoke in Tokyo','Tokyo','5','Ein privater Karaoke-Raum ist eine unkomplizierte Abendaktivität, allein oder später mit neuen Bekanntschaften.','goldenGai','maybe'],
-  ['mori-tower','Tokyo View vom Mori Tower','Tokyo','2–5','Aussichtsplattform in Roppongi mit weitem Blick über das nächtliche Tokyo; als flexible Schlechtwetter- oder Abendoption vormerken.','tokyoMetro','maybe'],
+  ['karaoke','Karaoke in Tokyo','Tokyo','5','Ein privater Karaoke-Raum ist eine unkomplizierte Abendaktivität, allein oder später mit neuen Bekanntschaften.','karaokeRoom','maybe'],
+  ['mori-tower','Tokyo View vom Mori Tower','Tokyo','2–5','Aussichtsplattform in Roppongi mit weitem Blick über das nächtliche Tokyo; als flexible Schlechtwetter- oder Abendoption vormerken.','moriTowerView','maybe'],
   ['teamlab-borderless','teamLab Borderless','Tokyo','4–5','Immersives digitales Kunstmuseum in Azabudai Hills, in dem sich Licht-, Klang- und Projektionsräume ohne feste Wegführung miteinander verbinden; für zwei bis drei Stunden ein Zeitfenster-Ticket reservieren.','teamlab'],
-  ['odaiba','Odaiba, Monorail & Gundam','Tokyo','2–5','Futuristische Inselkulisse mit Fahrt über die Rainbow Bridge, Uferblick und der großen Unicorn-Gundam-Statue.','yokohamaHarbor','maybe'],
-  ['ginza-shopping','Ginza & Umeshu-Souvenir','Tokyo','5','Ginza mit dem Seiko-Nachmittag verbinden und in einem Kaufhaus nach japanischem Pflaumenwein als Souvenir schauen.','seikoHouse'],
-  ['secondhand','Second-Hand-Shopping','Tokyo','2–5','Vintagekleidung, Kameras, Games oder Uhren gezielt in spezialisierten Läden und beim Flohmarkt vergleichen.','fleaMarket'],
-  ['ramen','Ramen essen','Tokyo','2–5','Zwischen Ichiran mit Einzelkabine, Ippudo und einem kleinen Viertel-Ramenladen wählen, statt nur Touristenketten abzuklappern.','asakusa'],
-  ['capsule-stay','Eine Nacht im Capsule-Hotel','Tokyo','6','MyCUBE in Kuramae bietet die Capsule-Erfahrung mit mehr Privatsphäre und abschließbarem Stauraum.','ryokan','must'],
-  ['love-hotel','Themenhotel / Love Hotel (optional)','Tokyo','2–5','Japanische Kurzzeithotels haben oft auffällige Themenzimmer, große Bäder oder Karaoke; nur bei klarer Preisangabe und seriöser Buchung wählen.','shibuya','maybe'],
-  ['game-center','Game Center','Tokyo','3–5','Mehrstöckige Spielhalle mit Rhythmusspielen, Rennspielen, Greifautomaten und klassischen Arcade-Titeln.','arcade'],
+  ['odaiba','Odaiba, Monorail & Gundam','Tokyo','2–5','Futuristische Inselkulisse mit Fahrt über die Rainbow Bridge, Uferblick und der großen Unicorn-Gundam-Statue.','odaibaView','maybe'],
+  ['ginza-shopping','Ginza & Umeshu-Souvenir','Tokyo','5','Ginza mit dem Seiko-Nachmittag verbinden und in einem Kaufhaus nach japanischem Pflaumenwein als Souvenir schauen.','ginzaShopping'],
+  ['secondhand','Second-Hand-Shopping','Tokyo','2–5','Vintagekleidung, Kameras, Games oder Uhren gezielt in spezialisierten Läden und beim Flohmarkt vergleichen.','secondHand'],
+  ['ramen','Ramen essen','Tokyo','2–5','Zwischen Ichiran mit Einzelkabine, Ippudo und einem kleinen Viertel-Ramenladen wählen, statt nur Touristenketten abzuklappern.','ramenBowl'],
+  ['capsule-stay','Eine Nacht im Capsule-Hotel','Tokyo','6','MyCUBE in Kuramae bietet die Capsule-Erfahrung mit mehr Privatsphäre und abschließbarem Stauraum.','capsuleHotel','must'],
+  ['love-hotel','Themenhotel / Love Hotel (optional)','Tokyo','2–5','Japanische Kurzzeithotels haben oft auffällige Themenzimmer, große Bäder oder Karaoke; nur bei klarer Preisangabe und seriöser Buchung wählen.','loveHotel','maybe'],
+  ['game-center','Game Center','Tokyo','3–5','Mehrstöckige Spielhalle mit Rhythmusspielen, Rennspielen, Greifautomaten und klassischen Arcade-Titeln.','tokyoGameCenter'],
   ['kamakura','Kamakura & Tsurugaoka Hachimangū','Kamakura / Yokohama','6','Historische Tempelstadt mit einem bedeutenden Schrein und der Einkaufsstraße Komachi-dōri.','kamakura'],
   ['karepan','Curry Bread in Kamakura','Kamakura / Yokohama','6','Kare Pan ist ein knuspriges, mit japanischem Curry gefülltes Brot für unterwegs.','curryBread'],
   ['yokohama-hafen','Yokohama-Hafen','Kamakura / Yokohama','6','Die Hafenpromenade bietet Blicke auf Wasser, moderne Skyline und die Ufer von Minato Mirai.','yokohamaHarbor'],
@@ -191,9 +211,9 @@ const activities = [
   ['kenrokuen','Kenrokuen-Garten','Kanazawa','10','Großer japanischer Landschaftsgarten mit Teichen, Brücken und sorgfältig angelegten Wegen.','kanazawa'],
   ['machiya','Traditionelles Machiya-Haus','Kanazawa','9–10','Übernachtung in einem renovierten japanischen Stadthaus mit traditioneller Architektur.','machiya'],
   ['shirakawago','Shirakawa-gō','Shirakawa-gō / Takayama','11','Bergdorf mit steilen Gasshō-Dächern und einer Kulisse, die wie ein Freilichtmuseum wirkt.','shirakawa'],
-  ['pudding','Shirakawago Purin no Ie','Shirakawa-gō / Takayama','11','Kleiner Dessertstopp im Dorf für den Pudding aus dem örtlichen Puddingladen.','shirakawa'],
+  ['pudding','Shirakawago Purin no Ie','Shirakawa-gō / Takayama','11','Kleiner Dessertstopp im Dorf für den Pudding aus dem örtlichen Puddingladen.','shirakawaPudding'],
   ['hidabeef','Hida-Rind probieren','Shirakawa-gō / Takayama','11','Regionale Wagyu-Spezialität aus der Gegend von Takayama, zum Beispiel als Steak oder Spieß.','hidaBeef'],
-  ['showakan','Takayama Shōwa-kan','Shirakawa-gō / Takayama','12','Nostalgisches Museum, das japanische Läden und Alltagsszenen der Shōwa-Zeit nachbildet.','shirakawa'],
+  ['showakan','Takayama Shōwa-kan','Shirakawa-gō / Takayama','12','Nostalgisches Museum, das japanische Läden und Alltagsszenen der Shōwa-Zeit nachbildet.','takayamaShowa'],
   ['takayama-altstadt','Takayama-Altstadt','Shirakawa-gō / Takayama','12','Erhaltene Straßen mit dunklen Holzhäusern, kleinen Geschäften und traditioneller Atmosphäre.','takayama'],
   ['nintendo-museum','Nintendo Museum in Uji','Kyoto','13','Museum in einer früheren Nintendo-Fabrik mit Firmengeschichte, klassischen Spielen und interaktiven Installationen; Ticket-Losverfahren früh einplanen.','nintendoMuseum','must'],
   ['uji','Uji & Matcha','Kyoto','13','Ruhiger Vormittag in Uji mit Matcha und optional Byōdō-in als Ergänzung vor dem Nintendo Museum.','uji'],
@@ -214,13 +234,13 @@ const activities = [
   ['kinkaku','Kinkaku-ji','Kyoto','15','Zen-Tempel mit goldverkleidetem Pavillon, der sich im Teich spiegelt.','kinkaku'],
   ['dotonbori','Dōtonbori & Namba','Osaka','16','Neonbeleuchtete Gegend am Kanal mit Streetfood, Läden und abendlichem Trubel.','dotonbori'],
   ['takoyaki','Takoyaki in Dōtonbori','Osaka','16','Osakas berühmte Teigbällchen mit Oktopus direkt an einem gut besuchten Streetfood-Stand probieren.','takoyaki','must'],
-  ['osaka-arcade','Spielhallen in Osaka','Osaka','16','Arcades rund um Namba für Rhythmusspiele, Greifautomaten und eine spontane Spielrunde.','arcade'],
+  ['osaka-arcade','Spielhallen in Osaka','Osaka','16','Arcades rund um Namba für Rhythmusspiele, Greifautomaten und eine spontane Spielrunde.','osakaArcade'],
   ['usj','SUPER NINTENDO WORLD & Donkey Kong Country','Osaka','17','Ganzer Nintendo-Tag in den Universal Studios Japan mit Mario Kart und Mine Cart Madness; Eintritt und Area-Zugang früh vorbereiten.','superNintendo','must'],
   ['osaka-castle','Osaka Castle Park','Osaka','18','Weitläufige Grünanlage rund um die markante Burg von Osaka.','castle'],
   ['kuromon','Kuromon-Markt','Osaka','18','Überdachte Marktstraße mit Fischständen, Obst und Snacks.','kuromon'],
   ['shinsekai','Shinsekai','Osaka','18','Retroviertel beim Tsūtenkaku-Turm mit Leuchtreklamen und Kushikatsu-Lokalen.','shinsekai'],
-  ['kushikatsu','Kushikatsu in Shinsekai','Osaka','18','Frittierte Spieße mit Fleisch, Gemüse oder Käse sind der klassische Snack des Retroviertels.','shinsekai'],
-  ['dino-hotel','Dinosaurier-Check-in im Henn na Hotel','Osaka','18','Optionaler kurzer Blick ins Henn na Hotel Osaka Namba, wo Dinosaurier-Roboter am Check-in stehen; kein Hotelwechsel nötig.','castle','maybe'],
+  ['kushikatsu','Kushikatsu in Shinsekai','Osaka','18','Frittierte Spieße mit Fleisch, Gemüse oder Käse sind der klassische Snack des Retroviertels.','kushikatsu'],
+  ['dino-hotel','Dinosaurier-Check-in im Henn na Hotel','Osaka','18','Optionaler kurzer Blick ins Henn na Hotel Osaka Namba, wo Dinosaurier-Roboter am Check-in stehen; kein Hotelwechsel nötig.','dinoHotel','maybe'],
   ['todaiji','Tōdai-ji','Nara','19','Buddhistischer Tempel mit einer monumentalen Halle und einer großen Buddha-Statue.','todaiji'],
   ['nara-park','Nara-Park','Nara','19','Großer Park zwischen Schreinen und Tempeln, in dem frei laufende Hirsche leben.','nara'],
   ['kasuga-taisha','Kasuga Taisha','Nara','19','Waldschrein mit rund 3.000 Stein- und Bronzelaternen entlang der Wege und Gebäude.','kasuga','must'],
@@ -236,7 +256,7 @@ const activities = [
   ['peacepark','Hiroshima-Friedenspark & Museum','Hiroshima / Miyajima','20','Gedenkstätten und Museum vermitteln die Geschichte des Atombombenabwurfs und seine Folgen.','hiroshima'],
   ['mazda-museum','Mazda Museum & Werkstour','Hiroshima / Miyajima','21','Geführte Tour am Mazda-Hauptsitz mit Fahrzeuggeschichte, Wankelmotoren und Einblicken ins Werksgelände; kostenlose Reservierung ist Pflicht.','mazdaMuseum','must'],
   ['itsukushima','Itsukushima-Schrein','Hiroshima / Miyajima','22','Schrein auf Miyajima mit dem berühmten Torii im Wasser vor der Küste.','itsukushima'],
-  ['misen','Berg Misen','Hiroshima / Miyajima','22','Aussichtsberg auf Miyajima mit Wanderwegen und Blicken über die Inselwelt.','misen'],
+  ['misen','Berg Misen','Hiroshima / Miyajima','22','Aussichtsberg auf Miyajima mit Wanderwegen und Blicken über die Inselwelt.','misenView'],
   ['kokusai','Kokusai-dōri','Okinawa','23','Geschäftsstraße in Naha mit Lokalen, Souvenirs und abendlichem Stadtleben.','naha'],
   ['shuri','Shuri & Ryūkyū-Geschichte','Okinawa','24','Historischer Stadtteil rund um das frühere Zentrum des Ryūkyū-Königreichs.','shuri'],
   ['okinawa-natur','Okinawas Küste & Märkte','Okinawa','25','Freier Tag für Küstenblicke, Natur und lokale Märkte je nach Wetter.','okinawaCoast'],
@@ -252,10 +272,10 @@ const activities = [
   ,['gunkanjima','Gunkanjima / Battleship Island','Nagasaki','Route offen','Bootsausflug zur verlassenen ehemaligen Kohlemineninsel Hashima mit dicht stehenden Betonruinen; Landgang ist wetterabhängig.','gunkanjima','maybe']
   ,['nagasaki-chinatown','Nagasaki Shinchi Chinatown','Nagasaki','Route offen','Kompaktes chinesisches Viertel mit farbigen Toren und regionalen Gerichten wie Champon und Sara Udon.','nagasakiChinatown','maybe']
   ,['orizuru-tower','Orizuru Tower','Hiroshima / Miyajima','20–21','Aussichtsplattform direkt beim Friedenspark mit offenem Blick über den Atombombendom, die Stadt und bei klarer Sicht bis Miyajima.','orizuru','maybe']
-  ,['hiroshima-okonomiyaki','Hiroshima-Okonomiyaki','Hiroshima / Miyajima','20–21','Herzhafte Schichten aus Teig, Kohl, Nudeln, Ei und Sauce – ideal als Abendessen nach dem Friedenspark oder Mazda Museum.','hiroshima','must']
+  ,['hiroshima-okonomiyaki','Hiroshima-Okonomiyaki','Hiroshima / Miyajima','20–21','Herzhafte Schichten aus Teig, Kohl, Nudeln, Ei und Sauce – ideal als Abendessen nach dem Friedenspark oder Mazda Museum.','hiroshimaOkonomiyaki','must']
   ,['hiroshima-castle','Hiroshima-jō & Schlosspark','Hiroshima / Miyajima','20–21','Rekonstruierte Burg in einem ruhigen Park mit Wassergraben; als Zusatzpunkt einplanen, wenn nach Friedenspark oder Mazda Museum noch Zeit bleibt.','hiroshimaCastle','maybe']
   ,['miyajima-oysters','Miyajima-Austern probieren','Hiroshima / Miyajima','22','Gegrillte Hiroshima-Austern sind eine Inselspezialität; optional die mit Käse überbackene Variante wählen.','miyajimaOyster','maybe']
-  ,['miyajima-beef-korokke','Beef Korokke auf Miyajima','Hiroshima / Miyajima','22','Knusprige japanische Kroketten mit Rindfleischfüllung sind ein unkomplizierter Snack für den Weg durch die Einkaufsstraße.','kaniCroquette','maybe']
+  ,['miyajima-beef-korokke','Beef Korokke auf Miyajima','Hiroshima / Miyajima','22','Knusprige japanische Kroketten mit Rindfleischfüllung sind ein unkomplizierter Snack für den Weg durch die Einkaufsstraße.','miyajimaCroquette','maybe']
   ,['tempura-momiji','Tempura Momiji','Hiroshima / Miyajima','22','Frittiertes Momiji Manjū – ein warmer, süßer Snack in Ahornblattform, typisch für Miyajima.','momijiTempura','maybe']
   ,['mega-spoon','Ō-Shakushi – der riesige Reislöffel','Hiroshima / Miyajima','22','Monumentale Reiskelle und kurioses Fotomotiv, das an Miyajimas Tradition der hölzernen Shakushi erinnert.','miyajimaScoop','maybe']
   ,['miyajima-viewpoint','Aussicht über Tempel und Küste','Hiroshima / Miyajima','22','Einen erhöhten Aussichtspunkt oder bei genügend Zeit den Mount Misen wählen, um Tempel, Küste und Inselwelt von oben zu sehen.','misen','maybe']
