@@ -7,6 +7,7 @@ const activityLocations = {
   'meiji':[35.6764,139.6993],
   'harajuku':[35.6702,139.7027],
   'nintendo-tokyo':[35.6617,139.6987],
+  'ghibli-museum':[35.6962,139.5704],
   'bitcoin-meetup':[35.6870,139.7297],
   'shinjuku':[35.6852,139.7100],
   'metro':[35.6896,139.6921],
